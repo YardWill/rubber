@@ -1,0 +1,32 @@
+{
+  "name": "@util/rubber",
+  "version": "1.0.6",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": "Yard",
+  "license": "MIT",
+  "private": false,
+  "repository": "git@github.com:YardWill/rubber.git",
+  "scripts": {
+    "dev": "tsc -watch",
+    "clean": "rm -rf dist/*",
+    "test": "jest --maxWorkers=4",
+    "lint": "tslint --fix src/*.ts",
+    "test:coverage": "jest --maxWorkers=4 --coverage",
+    "dist": "tsc",
+    "prepublish": "yarn run dist"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "jest": "^23.5.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "codecov": "^3.2.0",
+    "isarray": "^2.0.4",
+    "isnumber": "^1.0.0",
+    "isobject": "^3.0.1"
+  }
+}

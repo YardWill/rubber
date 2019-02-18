@@ -1,5 +1,9 @@
 ## Rubber 
 
+[![npm version](https://badge.fury.io/js/rubber-util.svg)](https://badge.fury.io/js/rubber-util)
+[![codecov](https://codecov.io/gh/YardWill/rubber/branch/master/graph/badge.svg)](https://codecov.io/gh/YardWill/rubber)
+[![CircleCI](https://circleci.com/gh/YardWill/rubber.svg?style=svg)](https://circleci.com/gh/YardWill/rubber)
+
 工具类 类似lodash
 
 ## api

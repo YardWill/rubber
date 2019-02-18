@@ -7,7 +7,7 @@ type ITarget = string[];
 export const setData = (data, target: ITarget, value) => {
   if (target.length > 1) {
     const [first, ...rest] = target;
-    return Object.assign({}, data, { [first]: setData(data[first], rest, value) })
+    return Object.assign({}, data, { [first]: setData(data[first], rest, value) });
   }
   return Object.assign({}, data, { [target[0]]: value });
 };
@@ -42,7 +42,7 @@ export const filterData = (data: object) => {
     } else if (keyData !== '') {
       obj[key] = keyData;
     }
-  })
+  });
   return obj;
 };
 

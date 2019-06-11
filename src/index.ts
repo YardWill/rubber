@@ -37,10 +37,12 @@ export const filterData = (data: object) => {
   const obj = {};
   Object.keys(data).map((key: string) => {
     const keyData = data[key];
-    if (typeof keyData === 'object' && keyData !== null) {
-      obj[key] = filterData(keyData);
-    } else if (keyData !== '') {
-      obj[key] = keyData;
+    if (keyData !== null) {
+      if (typeof keyData === 'object') {
+        obj[key] = filterData(keyData);
+      } else if (keyData !== '') {
+        obj[key] = keyData;
+      }
     }
   });
   return obj;

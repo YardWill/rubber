@@ -41,6 +41,17 @@ test('filterData', () => {
       hh: 'n',
     },
   });
+
+  expect(filterData({
+    hh: null, h2: {
+      h1: '',
+      hh: 'n',
+    },
+  })).toEqual({
+    h2: {
+      hh: 'n',
+    },
+  });
 });
 
 describe('graphql', () => {

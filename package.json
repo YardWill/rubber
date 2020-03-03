@@ -24,7 +24,7 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
-    "codecov": "^3.2.0",
+    "codecov": "^3.6.5",
     "isarray": "^2.0.4",
     "isnumber": "^1.0.0",
     "isobject": "^3.0.1"
